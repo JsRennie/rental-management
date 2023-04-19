@@ -1,9 +1,15 @@
 import React from "react";
 import { GiCancel } from "react-icons/gi";
 
-export const Modal = ({ visible, onClose }) => {
-  const handleOnClose = (e) => {
-    if (e.target.id === "container") onClose();
+export const Modal = ({
+  visible,
+  onClose,
+}: {
+  visible: boolean;
+  onClose: () => void;
+}) => {
+  const handleOnClose = (e: React.MouseEvent<HTMLElement>) => {
+    onClose();
   };
 
   if (!visible) return null;

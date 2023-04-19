@@ -53,6 +53,7 @@ const SignIn = () => {
               size="large"
               variant="contained"
               className="text-white bg-blue-950"
+              href="/tenant/home"
             >
               Login
             </Button>
