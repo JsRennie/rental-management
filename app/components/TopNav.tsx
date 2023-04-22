@@ -6,10 +6,18 @@ const TopNav = () => {
     <nav>
       <div className="bg-blue-950 py-2 flex items-center justify-between">
         <div className="px-2">
-          <CiMenuFries size={24} color="white" />
+          <CiMenuFries
+            size={24}
+            color="white"
+            className="hover:cursor-pointer"
+          />
         </div>
         <div className="px-2">
-          <CiSettings size={24} color="white" />
+          <CiSettings
+            size={24}
+            color="white"
+            className="hover:cursor-pointer"
+          />
         </div>
       </div>
     </nav>

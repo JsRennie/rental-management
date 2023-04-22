@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 
 const PersonalDetails = () => {
   return (
-    <div>
+    <div className="">
       <div className="text-center">
         <header className="text-blue-950 font-extrabold text-lg">SignUp</header>
         <span className="text-sm font-semibold opacity-60">
@@ -14,7 +14,7 @@ const PersonalDetails = () => {
         </span>
       </div>
       <div className="flex justify-center items-center mt-2">
-        <div className="w-1/4">
+        <div className=" w-1/2 md:w-1/4">
           <form action="#">
             <label htmlFor="" className="block">
               <span className="block text-xs font-medium text-blue-950">

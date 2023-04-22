@@ -16,7 +16,7 @@ const SignIn = () => {
         </span>
       </div>
       <div className="flex justify-center items-center mt-2">
-        <div className="w-1/4">
+        <div className="w-1/2 md:w-1/4">
           <form action="#" className="mb-2">
             <label htmlFor="" className="block">
               <span className="block text-xs font-medium text-blue-950">
@@ -53,7 +53,7 @@ const SignIn = () => {
               size="large"
               variant="contained"
               className="text-white bg-blue-950"
-              href="/tenant/home"
+              href="/tenant/dashboard"
             >
               Login
             </Button>

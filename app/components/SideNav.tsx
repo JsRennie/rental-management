@@ -1,45 +1,51 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import { BsFillPersonFill } from "react-icons/bs";
-import { CiHome, CiViewList, CiGrid42 } from "react-icons/ci";
+import { CiViewList, CiGrid42 } from "react-icons/ci";
+import Badges from "./Badges";
 
 const nav = [
   {
-    icon: <CiHome size={20} />,
-    label: "Home",
-    href: "/tenant/home",
+    icon: <CiGrid42 size={24} />,
+    label: "Dashboard",
+    href: "/tenant/dashboard",
   },
   {
-    icon: <CiViewList size={20} />,
+    icon: <CiViewList size={24} />,
     label: "Application",
     href: "/tenant/application",
   },
   {
-    icon: <CiGrid42 size={20} />,
-    label: "Dashboard",
-    href: "/tenant/dashboard",
+    icon: <Badges />,
+    label: "Notification",
+    href: "/tenant/notification",
   },
 ];
 
 const SideNav = () => {
   return (
-    <nav className="h-screen border-r border-slate-500 shadow-md shadow-blue-950/40">
+    <nav className="md:h-screen md:border-r md:border-slate-500 md:shadow-md md:shadow-blue-950/40">
       <div className="bg-blue-950 py-2">
-        <header className="flex justify-center gap-1 items-center">
+        <header className="flex pl-2 gap-1 items-center">
           <BsFillPersonFill size={24} color="white" />
           <p className="text-white font-semibold">Tenant Portal</p>
         </header>
       </div>
       <div className="mt-8">
-        <div className="">
+        <div>
           {nav.map((item, index) => (
-            <Link
-              key={index}
-              href={item.href}
-              className="pb-2 pl-4 flex gap-2 items-center text-sm text-blue-950 hover:translate-x-2"
-            >
-              {item.icon} {item.label}
-            </Link>
+            <div>
+              <Link
+                key={index}
+                href={item.href}
+                className="pb-2 flex text-lg text-blue-950"
+              >
+                <div className="flex pl-8 mx-1 items-center gap-2 w-full hover:bg-slate-200 rounded py-2">
+                  {item.icon} {item.label}
+                </div>
+              </Link>
+            </div>
           ))}
         </div>
       </div>

@@ -14,7 +14,7 @@ const ApplicationDetaild = () => {
         </span>
       </div>
       <div className="flex justify-center items-center mt-2">
-        <div className="w-1/4">
+        <div className="w-1/2 md:w-1/4">
           <form action="#">
             <label htmlFor="" className="block">
               <span className="block text-xs font-medium text-blue-950">

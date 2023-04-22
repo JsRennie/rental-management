@@ -1,3 +1,10 @@
+import Landing from "./components/layouts/Landing";
+
 export default function Home() {
-  return <main></main>;
+  // landing page here
+  return (
+    <main className="">
+      <Landing />
+    </main>
+  );
 }
