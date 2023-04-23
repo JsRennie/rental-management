@@ -1,14 +1,22 @@
+import Link from "next/link";
 import React from "react";
 
 const Stepper = () => {
   return (
-    <div className="mt-4 flex justify-center">
+    <div className="my-4 flex justify-center">
+      <div>
+        <Link href={"/tenant/application"}>
+          <p className="text-sm text-red-600 pl-4">cancel</p>
+        </Link>
+      </div>
       <ol className="flex justify-center items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white sm:text-base sm:p-4 sm:space-x-4">
         <li className="flex items-center text-blue-950">
           <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-blue-950 rounded-full shrink-0">
             1
           </span>
-          Lease <span className="hidden sm:inline-flex sm:ml-2">Details</span>
+          <Link href={"/tenant/application/newapplication/lease-details"}>
+            Lease <span className="hidden sm:inline-flex sm:ml-2">Details</span>
+          </Link>
           <svg
             aria-hidden="true"
             className="w-4 h-4 ml-2 sm:ml-4"
@@ -29,8 +37,10 @@ const Stepper = () => {
           <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
             2
           </span>
-          Roommate
-          <span className="hidden sm:inline-flex sm:ml-2">details</span>
+          <Link href={"/tenant/application/newapplication/roommate-details"}>
+            Roommate
+            <span className="hidden sm:inline-flex sm:ml-2">details</span>
+          </Link>
           <svg
             aria-hidden="true"
             className="w-4 h-4 ml-2 sm:ml-4"
@@ -51,8 +61,10 @@ const Stepper = () => {
           <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
             3
           </span>
-          Upload
-          <span className="hidden sm:inline-flex sm:ml-2">documents</span>
+          <Link href={"/tenant/application/newapplication/documents"}>
+            Upload
+            <span className="hidden sm:inline-flex sm:ml-2">documents</span>
+          </Link>
           <svg
             aria-hidden="true"
             className="w-4 h-4 ml-2 sm:ml-4"
@@ -73,8 +85,10 @@ const Stepper = () => {
           <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
             4
           </span>
-          Guardian
-          <span className="hidden sm:inline-flex sm:ml-2">info</span>
+          <Link href={"/tenant/application/newapplication/guardian-details"}>
+            Guardian
+            <span className="hidden sm:inline-flex sm:ml-2">info</span>
+          </Link>
           <svg
             aria-hidden="true"
             className="w-4 h-4 ml-2 sm:ml-4"
@@ -95,8 +109,10 @@ const Stepper = () => {
           <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
             5
           </span>
-          Review
-          <span className="hidden sm:inline-flex sm:ml-2">& submit</span>
+          <Link href={"/tenant/application/newapplication/review"}>
+            Review
+            <span className="hidden sm:inline-flex sm:ml-2">& submit</span>
+          </Link>
         </li>
       </ol>
     </div>

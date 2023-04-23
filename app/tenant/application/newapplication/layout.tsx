@@ -1,11 +1,13 @@
 import Stepper from "@/app/components/Stepper";
 
-export default function AppLayout({ children }: { children: React.ReactNode }) {
+export default function NewAppLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <section>
-      <header>
-        <Stepper />
-      </header>
+      <Stepper />
       {children}
     </section>
   );

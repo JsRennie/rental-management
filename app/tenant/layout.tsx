@@ -1,7 +1,7 @@
 import SideNav from "../components/SideNav";
 import TopNav from "../components/TopNav";
 
-export default function SigninLayout({
+export default function TenantLayout({
   children,
 }: {
   children: React.ReactNode;
