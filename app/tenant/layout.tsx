@@ -9,10 +9,10 @@ export default function SigninLayout({
   return (
     <section className="h-screen grid grid-cols-12">
       {/* Include shared UI here e.g. a header or sidebar */}
-      <div className="md:col-span-2 hidden md:block ">
+      <div className="lg:col-span-2 hidden lg:block ">
         <SideNav />
       </div>
-      <div className="md:col-span-10 col-span-12">
+      <div className="lg:col-span-10 col-span-12">
         <TopNav />
         {children}
       </div>

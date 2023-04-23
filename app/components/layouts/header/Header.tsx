@@ -41,7 +41,7 @@ const Header = () => {
           </div>
         </div>
         <div className="md:hidden pr-10">
-          <CiMenuFries size={24} color="blue" />
+          <CiMenuFries size={24} color="black" />
         </div>
       </div>
     </header>

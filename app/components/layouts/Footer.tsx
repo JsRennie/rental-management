@@ -4,7 +4,7 @@ import { BsRocketTakeoffFill } from "react-icons/bs";
 
 const Footer = () => {
   return (
-    <section>
+    <section className="mt-6">
       <div className="block items-center md:flex md:justify-center">
         <div className="block items-center md:flex md:items-center">
           <div className="">

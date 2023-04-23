@@ -1,3 +1,4 @@
+import ProgressBar from "../components/ProgressBar";
 import TopBar from "../components/TopBar";
 
 export default function SignupLayout({
@@ -7,8 +8,8 @@ export default function SignupLayout({
 }) {
   return (
     <section>
-      {/* Include shared UI here e.g. a header or sidebar */}
       <TopBar />
+      <ProgressBar />
       {children}
     </section>
   );
