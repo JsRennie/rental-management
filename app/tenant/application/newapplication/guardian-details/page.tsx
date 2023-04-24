@@ -12,7 +12,7 @@ export default function Home() {
         </p>
       </div>
       <div className="flex justify-center">
-        <form action="" className="w-1/4">
+        <form action="" className="w-1/2 md:w-1/4">
           <div className="relative mb-4">
             <input
               type="text"

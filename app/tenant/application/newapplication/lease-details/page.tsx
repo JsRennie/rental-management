@@ -8,7 +8,7 @@ export default function Home() {
         <p className="text-base">Please fill in the lease agreement!</p>
       </div>
       <div className="flex justify-center mt-4">
-        <form action="" className="w-1/4">
+        <form action="" className="w-1/2 md:w-1/4">
           <div className="mb-6">
             <input
               type="date"

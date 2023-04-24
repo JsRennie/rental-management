@@ -21,7 +21,7 @@ export default function Home() {
         </p>
       </div>
       <div className="flex justify-center mt-4">
-        <form action="" className="w-1/4 space-y-4">
+        <form action="" className="w-1/2 md:w-1/4 space-y-4">
           <select
             id="lease_details"
             required

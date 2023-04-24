@@ -7,7 +7,7 @@ export default function Home() {
         <h1 className="text-2xl text-blue-950 font-semibold">
           Upload Your Documents
         </h1>
-        <p className="text-base">
+        <p className="text-sm md:text-base">
           We need to verify your identify. Read our
           <span>
             <Link href={"#"} className="underline">
@@ -21,9 +21,11 @@ export default function Home() {
             </span>
           </span>
         </p>
-        <p className="text-sm my-4">Upload your National and School ID</p>
+        <p className="text-xs md:text-sm my-4">
+          Upload your National and School ID
+        </p>
       </div>
-      <div className="flex justify-center items-center w-1/2">
+      <div className="flex justify-center items-center mx-auto w-1/2">
         <label
           htmlFor="dropzone-file"
           className="flex flex-col items-center justify-center w-full h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-gray-50"

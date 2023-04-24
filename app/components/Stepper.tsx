@@ -3,7 +3,7 @@ import React from "react";
 
 const Stepper = () => {
   return (
-    <div className="my-4 flex justify-center">
+    <div className="my-4 hidden md:flex justify-center">
       <div>
         <Link href={"/tenant/application"}>
           <p className="text-sm text-red-600 pl-4">cancel</p>
