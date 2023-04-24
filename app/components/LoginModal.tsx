@@ -1,7 +1,13 @@
 import React from "react";
 import { Button } from "@mui/material";
 
-export const LoginModal = ({ visible, onClose }) => {
+export const LoginModal = ({
+  visible,
+  onClose,
+}: {
+  visible: boolean;
+  onClose: () => void;
+}) => {
   const handleOnClose = (e) => {
     if (e.target.id === "container") onClose();
   };

@@ -88,6 +88,7 @@ const Info = () => {
               </Button>
               <Button
                 size="large"
+                type="submit"
                 variant="contained"
                 className="text-white bg-blue-950"
                 onClick={() => setShowModal(true)}

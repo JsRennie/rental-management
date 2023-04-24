@@ -15,7 +15,7 @@ const ApplicationDetaild = () => {
       </div>
       <div className="flex justify-center items-center mt-2">
         <div className="w-1/2 md:w-1/4">
-          <form action="#">
+          <form action="">
             <label htmlFor="" className="block">
               <span className="block text-xs font-medium text-blue-950">
                 University/College
@@ -120,6 +120,7 @@ const ApplicationDetaild = () => {
               </Button>
               <Button
                 size="large"
+                type="submit"
                 variant="contained"
                 className="text-white bg-blue-950"
                 href="/signup/parentinfo"

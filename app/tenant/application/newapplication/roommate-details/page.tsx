@@ -18,14 +18,20 @@ export default function Home() {
               "/tenant/application/newapplication/roommate-details/roommate"
             }
           >
-            <button className="border border-blue-950 text-blue-950 py-2 px-10 w-fit rounded uppercase">
+            <button
+              type="submit"
+              className="border border-blue-950 text-blue-950 py-2 px-10 w-fit rounded uppercase"
+            >
               yes
             </button>
           </Link>
         </div>
         <div>
           <Link href={"/tenant/application/newapplication/documents"}>
-            <button className="border border-blue-950 text-blue-950 py-2 px-10 w-fit rounded uppercase">
+            <button
+              type="submit"
+              className="border border-blue-950 text-blue-950 py-2 px-10 w-fit rounded uppercase"
+            >
               No
             </button>
           </Link>

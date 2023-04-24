@@ -142,6 +142,7 @@ const PersonalDetails = () => {
               </Button>
               <Button
                 size="large"
+                type="submit"
                 variant="contained"
                 className="text-white bg-blue-950"
                 href="/signup/applicationdetails"

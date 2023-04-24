@@ -1,3 +1,5 @@
+"use client";
+import Link from "next/link";
 import React from "react";
 import { CiSettings, CiMenuFries } from "react-icons/ci";
 

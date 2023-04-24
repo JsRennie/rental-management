@@ -2,7 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import Button from "@mui/material/Button";
-import { IoIosArrowBack } from "react-icons/io";
 
 const SignIn = () => {
   return (
@@ -51,6 +50,7 @@ const SignIn = () => {
           <div className=" flex justify-center my-4">
             <Button
               size="large"
+              type="submit"
               variant="contained"
               className="text-white bg-blue-950"
               href="/tenant/dashboard"

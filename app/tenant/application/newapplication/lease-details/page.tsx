@@ -36,7 +36,10 @@ export default function Home() {
       </div>
       <div className="flex justify-center mt-6">
         <Link href={"/tenant/application/newapplication/roommate-details"}>
-          <button className="py-2 px-4 w-fit text-white bg-blue-950 rounded uppercase">
+          <button
+            type="submit"
+            className="py-2 px-4 w-fit text-white bg-blue-950 rounded uppercase"
+          >
             next
           </button>
         </Link>

@@ -34,6 +34,7 @@ const ResetPassword = () => {
           <div className=" flex justify-center my-4">
             <Button
               size="large"
+              type="submit"
               variant="contained"
               className="text-white bg-blue-950"
             >

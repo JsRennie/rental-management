@@ -132,7 +132,10 @@ export default function Home() {
             </div>
             <div>
               <Link href={"/tenant/application/newapplication/documents"}>
-                <button className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase">
+                <button
+                  type="submit"
+                  className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase"
+                >
                   Next
                 </button>
               </Link>
