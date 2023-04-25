@@ -2,7 +2,8 @@ import Link from "next/link";
 import React from "react";
 
 interface CardProps {
-  icon: React.ElementType;
+  icon: React.ReactNode;
+  children?: never;
   paragraph: string;
   footer?: string;
 }
