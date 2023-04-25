@@ -9,7 +9,8 @@ module.exports = {
     extend: {
       backgroundImage: {
         modal: "url('/Done-rafiki.png')",
-        desc: "url('/banner.png')",
+        banner: "url('/banner.png')",
+        profile: "url('/profile.jpg')",
       },
     },
   },
