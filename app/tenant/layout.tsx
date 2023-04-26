@@ -12,8 +12,10 @@ export default function TenantLayout({
       <div className="lg:col-span-2 hidden lg:block ">
         <SideNav />
       </div>
-      <div className="lg:col-span-10 col-span-12">
-        <TopNav />
+      <div className="lg:col-span-10 col-span-12 overflow-y-auto">
+        <div className="sticky top-0">
+          <TopNav />
+        </div>
         {children}
       </div>
     </section>

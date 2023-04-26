@@ -1,15 +1,6 @@
-"use client";
-import React, { useState } from "react";
 import Link from "next/link";
-import AppModal from "@/app/components/AppModal";
 
 export default function Home() {
-  const [showModal, setShowModal] = useState(false);
-
-  const handleSubmit = (event: React.FormEvent<HTMLElement>) => {
-    event.preventDefault();
-    setShowModal(true);
-  };
   return (
     <main>
       <div className="text-center">
@@ -70,7 +61,6 @@ export default function Home() {
             </label>
           </div>
         </form>
-        {showModal && <AppModal />}
       </div>
       <div className="flex justify-center mt-4 gap-4">
         <div>
@@ -81,11 +71,7 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <button
-            type="submit"
-            onSubmit={handleSubmit}
-            className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase"
-          >
+          <button className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase">
             Submit
           </button>
         </div>

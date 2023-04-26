@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <div>
       <div className="mt-3 mb-6">
-        <Link href={"#"}>
+        <Link href={"/tenant/dashboard/service"}>
           <button className="bg-blue-950 p-2 uppercase text-white text-xs font-semibold rounded hover:cursor-pointer hover:shadow-blue-900/50 hover:shadow-xl">
             + request Service
           </button>

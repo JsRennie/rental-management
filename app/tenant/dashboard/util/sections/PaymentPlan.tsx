@@ -1,13 +1,17 @@
 import React from "react";
+import Link from "next/link";
 import PaymentCard from "../PaymentCard";
 import Table from "../Table";
 
 const PaymentPlan = () => {
   return (
     <div>
-      <h1 className="text-blue-950 text-sm md:text-base font-medium">
+      <h1 className="text-blue-950 text-sm md:text-sm font-medium">
         Your Payment Plan:
       </h1>
+      <h2 className="text-sky-500 text-xs underline font-medium text-right">
+        <Link href={"#"}>Add new plan</Link>
+      </h2>
       <p className="text-blue-950 text-sm mb-2">
         Please select one during payments...
       </p>

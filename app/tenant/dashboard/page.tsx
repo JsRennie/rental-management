@@ -5,12 +5,11 @@ import Profile from "./util/sections/Profile";
 
 export default function Home() {
   return (
-    <main className="mt-4 ml-3 mr-6 overflow-y-auto">
+    <main className="mt-4 ml-3 mr-6">
       <Header />
       <div className="rounded-sm drop-shadow-2xl p-2">
         <Spending />
       </div>
-
       <div className="w-full block md:flex mt-6">
         <div className="w-full md:w-1/2 border border-slate-100 rounded-sm drop-shadow-md p-2 md:p-6">
           <PaymentPlan />

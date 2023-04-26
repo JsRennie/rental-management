@@ -32,7 +32,7 @@ const Profile = () => {
             Date="Jan 17 2021"
           />
           <div className="mt-3">
-            <Link href={"#"}>
+            <Link href={"/tenant/dashboard/change-roommate"}>
               <button className="bg-blue-950 p-2 uppercase text-white text-xs font-semibold rounded hover:cursor-pointer hover:shadow-blue-900/50 hover:shadow-xl">
                 Change Roommate
               </button>
@@ -49,7 +49,7 @@ const Profile = () => {
             Roommate="Yes"
           />
           <div className="mt-3">
-            <Link href={"#"}>
+            <Link href={"/tenant/dashboard/lease-renewal"}>
               <button className="bg-blue-950 p-2 uppercase text-white text-xs font-semibold rounded hover:cursor-pointer hover:shadow-blue-900/50 hover:shadow-xl">
                 Renew Lease
               </button>
