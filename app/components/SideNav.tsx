@@ -25,7 +25,7 @@ const nav = [
 
 const SideNav = () => {
   return (
-    <nav className="lg:h-screen lg:border-r lg:border-slate-500 lg:shadow-md lg:shadow-blue-950/40">
+    <nav className="bg-slate-50 lg:h-screen lg:border-r lg:border-slate-500 lg:shadow-md lg:shadow-blue-950/40">
       <div className="bg-blue-950 py-2">
         <header className="flex pl-2 gap-1 items-center">
           <BsFillPersonFill size={24} color="white" />
