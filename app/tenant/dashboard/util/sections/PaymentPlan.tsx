@@ -15,7 +15,7 @@ const PaymentPlan = () => {
       <p className="text-blue-950 text-sm mb-2">
         Please select one during payments...
       </p>
-      <div className="block md:flex gap-8">
+      <div className="flex flex-wrap md:flex gap-8">
         <div className="pb-2 md:pb-0">
           <div className="block md:flex items-center">
             <input

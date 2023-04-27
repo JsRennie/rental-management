@@ -13,7 +13,7 @@ export default function TenantLayout({
         <SideNav />
       </div>
       <div className="lg:col-span-10 col-span-12 overflow-y-auto">
-        <div className="sticky top-0">
+        <div className="sticky top-0 z-10">
           <TopNav />
         </div>
         {children}

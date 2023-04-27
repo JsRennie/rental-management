@@ -21,7 +21,7 @@ const Profile = () => {
           />
         </div>
       </div>
-      <div className="block md:flex gap-8 mt-8">
+      <div className="flex flex-wrap md:flex gap-8 mt-8">
         <div>
           <RoommateCard
             Title="Roommate Details"
