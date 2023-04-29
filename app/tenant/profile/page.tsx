@@ -1,7 +1,9 @@
+import PersonalInfo from "./utils/PersonalInfo";
+
 export default function Home() {
   return (
     <main>
-      <p>this is the profile page</p>
+      <PersonalInfo />
     </main>
   );
 }

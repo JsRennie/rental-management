@@ -7,7 +7,7 @@ const landing = () => {
   return (
     <section>
       <Header />
-      <div className="block md:flex md:justify-center items-center">
+      {/* <div className="block md:flex md:justify-center items-center">
         <div className="block  items-center md:flex">
           <div>
             <h4 className="text-xs">Pick Your Fit</h4>
@@ -35,7 +35,7 @@ const landing = () => {
           <Image src="/banner.png" alt="banner" width={560} height={560} />
         </div>
       </div>
-      <Footer />
+      <Footer /> */}
     </section>
   );
 };

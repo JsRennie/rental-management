@@ -6,7 +6,7 @@ const ButtonOutlined = () => {
     <Link href={"/signup"}>
       <button
         type="submit"
-        className="px-3 py-2 text-blue-950 border border-blue-950 text-center rounded-3xl w-32"
+        className="px-3 py-2 text-blue-950 border border-blue-950 text-center rounded-3xl w-32 hover:shadow-xl hover:shadow-blue-950/50"
       >
         Sign Up
       </button>

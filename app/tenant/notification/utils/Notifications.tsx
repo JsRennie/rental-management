@@ -3,7 +3,7 @@ import React from "react";
 const Notifications = () => {
   return (
     <div className="py-3 border border-slate-300 rounded-sm">
-      <h1 className="text-blue-950 font-semibold text-lg px-2 mb-3">
+      <h1 className="text-blue-950 font-bold text-lg md:text-2xl text-center px-2 mb-3">
         Notifications
       </h1>
       <div className="border-y py-2 px-0">
@@ -14,11 +14,11 @@ const Notifications = () => {
           </div>
         </h1>
       </div>
-      {/* fetched using IDs */}
-      <div className="mt-20">
-        <p className="text-center text-xs underline">
-          "messages to be placed here"
-        </p>
+
+      <div className="mt-2">
+        <div className="pt-4 mx-2 border rounded">
+          <p>messages here</p>
+        </div>
       </div>
     </div>
   );
