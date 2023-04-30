@@ -2,8 +2,8 @@ import PersonalInfo from "./utils/PersonalInfo";
 
 export default function Home() {
   return (
-    <main>
+    <div>
       <PersonalInfo />
-    </main>
+    </div>
   );
 }

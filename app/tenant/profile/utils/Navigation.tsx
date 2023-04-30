@@ -22,7 +22,7 @@ const Nav = [
 
 const Navigation = () => {
   return (
-    <div className="mt-6">
+    <div className="md:mt-6 pt-2 md:pt-0 inline-flex md:block">
       {Nav.map((item, index) => (
         <div className="py-1">
           <Link href={item.href} key={index}>

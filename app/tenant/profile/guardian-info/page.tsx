@@ -1,11 +1,12 @@
 export default function Home() {
   return (
     <div>
-      <h2 className="text-blue-950 text-sm text-left mb-4">
+      <h2 className="text-blue-950 text-sm text-left pb-4">
+        <p className="text-lg">Guardians Information</p>
         Please provide accurate information before updating your details
       </h2>
       <form action="">
-        <div className="grid gap-6 mb-6 md:grid-cols-2 w-1/2">
+        <div className="grid gap-6 mb-6 grid-cols-2 md:w-1/2">
           <div>
             <label
               htmlFor="first_name"
@@ -68,7 +69,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="mb-6 w-1/2">
+        <div className="mb-6 md:w-1/2">
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-blue-950"
@@ -85,7 +86,7 @@ export default function Home() {
         </div>
         <button
           type="submit"
-          className="text-white bg-blue-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+          className="text-white bg-blue-950 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-fit  px-5 py-2.5 text-center"
         >
           Update
         </button>

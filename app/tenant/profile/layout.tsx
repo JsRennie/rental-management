@@ -9,11 +9,11 @@ export default function SettingLayout({
   return (
     <section>
       <Header />
-      <div className="flex h-screen">
-        <div className="w-1/5 border-r">
+      <div className="block md:flex h-screen">
+        <div className="md:w-1/5 md:border-r">
           <Navigation />
         </div>
-        <div className="w-4/5 pl-8 pt-6">{children}</div>
+        <div className="md:w-4/5 pl-8 pt-6">{children}</div>
       </div>
     </section>
   );
