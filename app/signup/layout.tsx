@@ -9,7 +9,7 @@ export default function SignupLayout({
   return (
     <section>
       <TopBar />
-      <ProgressBar />
+      <ProgressBar percentage={0} />
       {children}
     </section>
   );

@@ -7,7 +7,9 @@ export default function Home() {
       <div className="px-4">
         <div className="py-6 flex justify-between">
           <div className="">
-            <h1 className="text-blue-950 font-semibold">My Applications</h1>
+            <h1 className="text-blue-950 text-base md:text-lg font-bold uppercase">
+              My Applications
+            </h1>
           </div>
           <div>
             <Link href={"/tenant/application/newapplication/lease-details"}>

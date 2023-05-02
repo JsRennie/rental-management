@@ -6,7 +6,7 @@ import Button from "@mui/material/Button";
 
 const PersonalDetails = () => {
   return (
-    <div className="">
+    <div>
       <div className="text-center">
         <header className="text-blue-950 font-extrabold text-lg">SignUp</header>
         <span className="text-sm font-semibold opacity-60">
@@ -147,7 +147,7 @@ const PersonalDetails = () => {
                 className="text-white bg-blue-950"
                 href="/signup/applicationdetails"
               >
-                Sign up
+                Next
               </Button>
             </Stack>
           </div>
