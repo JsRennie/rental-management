@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { CiSettings, CiMenuFries, CiGrid42, CiViewList } from "react-icons/ci";
 import { VscChromeClose } from "react-icons/vsc";
 import Badges from "./Badges";
+import ProfileModal from "./ProfileModal";
 
 const Nav = [
   {
@@ -25,6 +26,11 @@ const Nav = [
 
 const TopNav = () => {
   const [menu, setMenu] = useState(false);
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
 
   return (
     <nav>
@@ -54,13 +60,14 @@ const TopNav = () => {
             </div>
           </div>
         </div>
-        <button className="px-2 ml-auto">
+        <button className="px-2 ml-auto" onClick={toggleModal}>
           <CiSettings
             size={24}
             color="white"
             className="hover:cursor-pointer"
           />
         </button>
+        {modal && <ProfileModal />}
       </div>
     </nav>
   );
