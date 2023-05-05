@@ -32,6 +32,10 @@ const TopNav = () => {
     setModal(!modal);
   };
 
+  const handleLinkClick = () => {
+    setModal(false);
+  };
+
   return (
     <nav>
       <div className="bg-blue-950 py-2 flex items-center lg:justify-between">
@@ -67,7 +71,7 @@ const TopNav = () => {
             className="hover:cursor-pointer"
           />
         </button>
-        {modal && <ProfileModal />}
+        {modal && <ProfileModal onClose={handleLinkClick} />}
       </div>
     </nav>
   );

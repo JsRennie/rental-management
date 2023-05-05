@@ -1,5 +1,6 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Nav = [
   {
@@ -21,12 +22,30 @@ const Nav = [
 ];
 
 const Navigation = () => {
+  const [activeHref, setActiveHref] = useState<string>("");
+
+  useEffect(() => {
+    setActiveHref(window.location.pathname);
+  }, []);
+
+  const handleLinkClick = (href: string) => {
+    setActiveHref(href);
+  };
+
   return (
     <div className="md:mt-6 pt-2 md:pt-0 inline-flex md:block">
       {Nav.map((item, index) => (
-        <div className="py-1">
-          <Link href={item.href} key={index}>
-            <div className="text-blue-950 text-sm pl-10 font-medium">
+        <div className="py-1" key={index}>
+          <Link href={item.href}>
+            <div
+              className={`text-sm pl-10 font-medium ${
+                activeHref === item.href ||
+                activeHref === item.href.split("/")[1]
+                  ? "text-blue-950"
+                  : "text-gray-300"
+              }`}
+              onClick={() => handleLinkClick(item.href)}
+            >
               {item.label}
             </div>
           </Link>

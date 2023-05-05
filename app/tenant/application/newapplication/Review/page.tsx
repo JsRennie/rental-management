@@ -1,6 +1,15 @@
+"use client";
+import { useState } from "react";
 import Link from "next/link";
+import AppModal from "@/app/components/AppModal";
 
 export default function Home() {
+  const [modal, setModal] = useState(false);
+
+  const toggleModal = () => {
+    setModal(!modal);
+  };
+
   return (
     <main>
       <div className="text-center">
@@ -71,9 +80,13 @@ export default function Home() {
           </Link>
         </div>
         <div>
-          <button className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase">
+          <button
+            className="bg-blue-950 text-white py-2 px-10 w-fit rounded uppercase"
+            onClick={toggleModal}
+          >
             Submit
           </button>
+          {modal && <AppModal />}
         </div>
       </div>
     </main>

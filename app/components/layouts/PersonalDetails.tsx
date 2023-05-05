@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as Yup from "yup";
+import { DevTool } from "@hookform/devtools";
 
 enum GenderEnum {
   female = "female",
@@ -37,6 +38,7 @@ const PersonalDetails = () => {
 
   const {
     register,
+    control,
     formState: { errors },
     handleSubmit,
   } = useForm<IFormInput>();
@@ -198,6 +200,7 @@ const PersonalDetails = () => {
               </div>
             </label>
           </form>
+          <DevTool control={control} />
           <p className="text-sm font-semibold text-gray-500 pt-2">
             Already have an account?
             <Link href={"/signin"}>
