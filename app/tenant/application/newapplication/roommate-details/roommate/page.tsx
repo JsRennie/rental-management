@@ -61,7 +61,9 @@ export default function Home() {
               required
               className="bg-gray-50 border border-gray-300 text-blue-950 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             >
-              <option selected>Select your gender</option>
+              <option className="text-xs" selected>
+                Select your roommate gender
+              </option>
               <option>Male</option>
               <option>Female</option>
             </select>

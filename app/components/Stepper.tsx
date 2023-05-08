@@ -10,8 +10,8 @@ const Stepper = () => {
         </Link>
       </div>
       <ol className="flex justify-center items-center w-full p-3 space-x-2 text-sm font-medium text-center text-gray-500 bg-white sm:text-base sm:p-4 sm:space-x-4">
-        <li className="flex items-center text-blue-950">
-          <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-blue-950 rounded-full shrink-0">
+        <li className="flex items-center">
+          <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border rounded-full shrink-0">
             1
           </span>
           <Link href={"/tenant/application/newapplication/lease-details"}>
@@ -34,7 +34,7 @@ const Stepper = () => {
           </svg>
         </li>
         <li className="flex items-center">
-          <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0 dark:border-gray-400">
+          <span className="flex items-center justify-center w-5 h-5 mr-2 text-xs border border-gray-500 rounded-full shrink-0">
             2
           </span>
           <Link href={"/tenant/application/newapplication/roommate-details"}>

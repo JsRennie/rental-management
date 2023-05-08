@@ -17,6 +17,7 @@ const SignIn = () => {
       <div className="flex justify-center items-center mt-2">
         <div className="w-1/2 lg:w-1/4">
           <form action="#" className="mb-2">
+            <div className="mt-1"></div>
             <label htmlFor="" className="block">
               <span className="block text-xs font-medium text-blue-950">
                 Email Address

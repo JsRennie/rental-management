@@ -1,7 +1,9 @@
+import NewRoommate from "./utils/NewRoommate";
+
 export default function Home() {
   return (
-    <main>
-      <p>change roomate here</p>
+    <main className="mt-4">
+      <NewRoommate />
     </main>
   );
 }

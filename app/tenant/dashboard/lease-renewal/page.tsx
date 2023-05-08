@@ -1,7 +1,9 @@
+import NewLease from "./utils/NewLease";
+
 export default function Home() {
   return (
-    <main>
-      <p>Lease here</p>
+    <main className="mt-4">
+      <NewLease />
     </main>
   );
 }
