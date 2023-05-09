@@ -12,7 +12,6 @@ interface RoommateProps {
 
 const LeaseCard = ({
   Title,
-
   Date,
   Roommate,
   Duration,

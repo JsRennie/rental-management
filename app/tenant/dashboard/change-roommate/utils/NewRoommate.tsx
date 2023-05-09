@@ -30,7 +30,7 @@ const NewRoommate = () => {
               placeholder="Write your reasons for a new roommate..."
             ></textarea>
             <p className="text-blue-950 text-xs md:text-sm text-left py-2">
-              Please provide the details fro your new roommate..
+              Please provide the details for your new roommate..
             </p>
             <div className="relative mb-4">
               <input
