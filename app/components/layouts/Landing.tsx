@@ -1,43 +1,35 @@
 import React from "react";
-import Header from "./header/Header";
-import Image from "next/image";
-import Footer from "./Footer";
+import Header from "./Section/Header";
+import Footer from "./Section/Footer";
+import Desc from "./Section/Desc";
 
-const landing = () => {
+const Landing = () => {
   return (
-    <section>
+    <section className="bg-hero bg-cover bg-center bg-no-repeat h-screen">
       <Header />
-      {/* <div className="block md:flex md:justify-center items-center">
-        <div className="block  items-center md:flex">
+      <div className="mx-20 flex flex-col justify-center h-full">
+        <div className="flex">
           <div>
-            <h4 className="text-xs">Pick Your Fit</h4>
-            <h1 className="text-blue-950 text-2xl md:text-4xl font-bold">
-              We Rent, You Use,
-              <span className="block">Its Yours!</span>
-              <span>Affordable Housing...</span>
-            </h1>
-            <p className="text-base py-4 w-1/2">
-              Choose from a range of hostels available for your preference, We
-              offer flexible lease terms to accommodate your unique needs and
-              situation.
+            <p className="text-white text-6xl font-bold w-2/3">
+              The Most Affordable Place To Live In Nairobi Area
             </p>
-            <div className="mt-2 flex gap-6">
-              <button className="px-3 w-32 py-2 bg-blue-950 text-white text-center rounded-3xl hover:shadow-xl hover:shadow-blue-950/50">
-                Explore
-              </button>
-              <button className="px-3 py-2 text-blue-950 border border-blue-950 text-center rounded-3xl w-32 hover:shadow-xl hover:shadow-blue-950/50">
-                Learn More
-              </button>
+          </div>
+          <div className="w-1/2 mr-8">
+            <div className="bg-map bg-cover bg-center bg-no-repeat h-full"></div>
+            <div className="flex justify-center mt-1">
+              <p className="bg-white text-base rounded font-medium py-2 px-2">
+                Locate Us
+              </p>
             </div>
           </div>
         </div>
-        <div className="">
-          <Image src="/banner.png" alt="banner" width={560} height={560} />
-        </div>
       </div>
-      <Footer /> */}
+      <div className="mx-20">
+        <Desc />
+        <Footer />
+      </div>
     </section>
   );
 };
 
-export default landing;
+export default Landing;
