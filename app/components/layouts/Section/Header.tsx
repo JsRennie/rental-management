@@ -31,7 +31,7 @@ const NAV_ITEMS: Array<Nav> = [
 
 const Header = () => {
   return (
-    <nav className="hidden md:flex md:justify-between md:items-center md:border-b md:border-white md:py-2 mx-20">
+    <nav className="hidden md:flex md:justify-between md:items-center md:border-b md:border-white md:py-2 md:mx-20">
       <div className="text-white text-base font-bold uppercase">
         <Link href={"/"}>Kwetu Hostels</Link>
       </div>

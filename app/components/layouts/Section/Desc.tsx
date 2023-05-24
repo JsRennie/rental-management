@@ -9,14 +9,16 @@ const Desc = () => {
   return (
     <section className="my-8">
       <div>
-        <h1 className="text-3xl font-bold underline mb-5">
-          Minimum Living Cost
+        <h1 className="text-xl md:text-3xl font-bold mb-5 flex gap-2">
+          <div className="border-b-4 pb-1 w-fit border-orange-600">
+            Minimum Living Cost
+          </div>
           <span> Takes Care Of Everthing</span>
         </h1>
-        <div className="flex gap-10">
-          <div className="bg-desc bg-cover bg-no-repeat bg-center h-96 w-2/5 drop-shadow-lg rounded-tl-3xl rounded-br-3xl"></div>
+        <div className="block lg:flex gap-10">
+          <div className="bg-desc bg-cover bg-no-repeat bg-center h-96 w-full md:w-2/5 drop-shadow-lg rounded-tl-3xl rounded-br-3xl"></div>
           <div className="space-y-6 py-10">
-            <div className="flex gap-16 text-lg font-medium">
+            <div className="flex flex-wrap justify-center gap-10 md:flex md:gap-16 text-base md:text-lg font-medium">
               <div>
                 <div className="bg-white drop-shadow-xl rounded w-fit">
                   <div className="p-3">
@@ -45,7 +47,7 @@ const Desc = () => {
                 <h3>Take Care Of Your Demands!</h3>
               </div>
             </div>
-            <div className="flex gap-16 text-lg font-medium">
+            <div className="flex flex-wrap justify-center gap-10 md:flex md:gap-16 text-base md:text-lg font-medium">
               <div>
                 <div className="bg-white drop-shadow-xl rounded w-fit">
                   <div className="p-3">
