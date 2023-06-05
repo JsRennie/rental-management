@@ -62,7 +62,7 @@ const PersonalDetails = () => {
         <div className=" w-1/2 lg:w-1/4">
           <form onSubmit={handleSubmit(onSubmit)} method="post">
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="firstName" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   First Name
                 </span>
@@ -90,7 +90,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="intials" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Middle Intial
                 </span>
@@ -123,7 +123,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="lastName" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Last Name
                 </span>
@@ -150,7 +150,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="gender" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Gender
                 </span>
@@ -177,7 +177,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="PhoneNumber" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Phone Number
                 </span>
@@ -206,7 +206,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="email" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Email Address
                 </span>
@@ -235,7 +235,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="password" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Password
                 </span>
@@ -264,7 +264,7 @@ const PersonalDetails = () => {
               </label>
             </div>
             <div className="mt-1">
-              <label htmlFor="" className="block">
+              <label htmlFor="confirmPassword" className="block">
                 <span className="block text-xs font-medium text-blue-950">
                   Confirm Password
                 </span>

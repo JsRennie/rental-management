@@ -20,7 +20,7 @@ const HeroSection = () => {
             </article>
             <button
               type="button"
-              className="bg-orange-600 text-lg text-white py-4 px-3 rounded-lg my-6 lg:mt-6 lg:my-0"
+              className="bg-orange-600 text-lg text-white py-4 px-3 rounded-lg my-6 lg:mt-6 lg:my-0 hover:bg-white hover:text-orange-600 hover:border-b-4 hover:border-orange-600"
             >
               Search Rooms
             </button>

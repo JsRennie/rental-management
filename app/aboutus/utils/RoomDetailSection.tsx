@@ -12,7 +12,7 @@ const RoomDetailSection = () => {
         </p>
         <button
           type="button"
-          className="bg-orange-600 rounded-lg text-white text-base md:text-lg py-2 px-1 md:py-4 md:px-3"
+          className="bg-orange-600 rounded-lg text-white text-base md:text-lg py-2 px-1 md:py-4 md:px-3 hover:bg-white hover:text-orange-600 hover:border-b-4 hover:border-orange-600"
         >
           View All Proterty
         </button>
